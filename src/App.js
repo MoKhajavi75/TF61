@@ -11,6 +11,11 @@ const App = () => {
           height: 95,
           borderRadius: 10
         }}
+        onPress={() =>
+          alert(
+            global.HermesInternal ? "Hermes is enabled" : "Hermes is disabled"
+          )
+        }
       >
         <LinearGradient
           style={{
